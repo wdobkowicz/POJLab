@@ -10,9 +10,6 @@ public class kalkulator {
 		car.milleage = 100;
 		car.price = 100000.99;
 		
-		System.out.println("Marka: "+ car.brand);
-		System.out.println("Nowy: "+car.isNew);
-		System.out.println("Przebieg: "+car.milleage);
-		System.out.println("Cena: "+car.price);
+		car.printCar();
 	}
 }
