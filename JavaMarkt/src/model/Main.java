@@ -38,7 +38,10 @@ public class Main {
 		cart.addPromotion(new MugPromotion())
 		    .applyPromotions()
 		    .applyPromotions();
+		
+		cart.addPromotion(new CouponPromotion(new Produkt("Kartofle",200)))
+			.applyPromotions();
 
-		System.out.println("Cart After Mug Promotion: "+cart);
+		System.out.println("Cart After Mug and Coupon Promotion: "+cart);
 	}
 }
