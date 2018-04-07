@@ -8,10 +8,13 @@ public class Main {
 		System.out.println("Stawka VAT: "+InvoicePosition.TAX_23);
 		
 		Product product = new Product("ABC123", "TV", 1000);
-	
 		
 		System.out.println("Code: "+product.getCode());
 		System.out.println("Code: "+product.getName());
 		System.out.println("Code: "+product.getPrice());
+		
+		InvoicePosition position = new InvoicePosition(product);
+		position.getNettoPrice();
+		
 	}
 }
